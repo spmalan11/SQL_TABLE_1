@@ -1,0 +1,130 @@
+use customers;
+CREATE TABLE customer1 (
+    cust_id INT PRIMARY KEY,
+    cust_name VARCHAR(50),
+    date DATE,
+    city VARCHAR(50),
+    state VARCHAR(50),
+    email_id VARCHAR(100),
+    device VARCHAR(50),
+    channel VARCHAR(50),
+    in_time TIME,
+    out_time TIME
+    
+);
+-- Insert values for Customer 1
+INSERT INTO customer1 VALUES
+(01, 'John Doe', '2023-01-15', 'New York', 'NY', 'johndoe@example.com', 'Mobile', 'Instagram', '09:00:00', '10:30:00'),
+(11, 'John Doe', '2023-02-12', 'New York', 'NY', 'johndoe@example.com', 'Desktop', 'Twitter', '11:00:00', '12:30:00'),
+(12, 'John Doe', '2023-03-17', 'New York', 'NY', 'johndoe@example.com', 'Tablet', 'Hathway', '13:00:00', '14:30:00'),
+(13, 'John Doe', '2023-04-18', 'New York', 'NY', 'johndoe@example.com', 'Tablet', 'Facebook', '15:00:00', '15:30:00'),
+(14, 'John Doe', '2023-05-20', 'New York', 'NY', 'johndoe@example.com', 'Mobile', 'Whatsapp', '19:00:00', '21:30:00');
+--
+-- Insert values for Customer 2
+INSERT INTO customer1 
+ VALUES (02, 'Jane Smith', '2023-01-07', 'Los Angeles', 'CA', 'janesmith@example.com', 'Desktop', 'Hathway', '08:30:00', '10:10:00'),
+(21, 'Jane Smith', '2023-02-17', 'Los Angeles', 'CA', 'janesmith@example.com', 'Mobile', 'Facebook', '09:30:00', '11:10:00'),
+(22, 'Jane Smith', '2023-03-27', 'Los Angeles', 'CA', 'janesmith@example.com', 'Desktop', 'Whatsapp', '10:30:00', '12:10:00'),
+(23, 'Jane Smith', '2023-04-07', 'Los Angeles', 'CA', 'janesmith@example.com', 'Tablet', 'Twitter', '11:30:00', '13:10:00'),
+(24, 'Jane Smith', '2023-05-17', 'Los Angeles', 'CA', 'janesmith@example.com', 'Desktop', 'Instagram', '13:30:00', '14:10:00');
+-- insert for customer 3
+INSERT INTO customer1
+VALUES(03, 'David Johnson', '2023-01-05', 'Chicago', 'IL', 'davidjohnson@example.com', 'Tablet', 'Hathway', '08:45:00', '10:10:00'),
+(31, 'David Johnson', '2023-02-05', 'Chicago', 'IL', 'davidjohnson@example.com', 'Mobile', 'Facebook', '09:45:00', '10:10:00'),
+(32, 'David Johnson', '2023-03-05', 'Chicago', 'IL', 'davidjohnson@example.com', 'Desktop', 'Whatsapp', '07:45:00', '08:10:00'),
+(33, 'David Johnson', '2023-04-05', 'Chicago', 'IL', 'davidjohnson@example.com', 'Mobile', 'Hathway', '18:45:00', '19:10:00'),
+(34, 'David Johnson', '2023-05-05', 'Chicago', 'IL', 'davidjohnson@example.com', 'Tablet', 'Telegram', '20:45:00', '21:10:00');
+-- Insert for customer 4
+INSERT INTO customer1 
+VALUES(41, 'David', '2023-01-21', 'Washington', 'WN', 'david@example.com', 'Mobile', 'Instagram', '18:45:00', '19:30:00'),
+(42, 'David', '2023-02-21', 'Washington', 'WN', 'david@example.com', 'Mobile', 'Facebook', '17:45:00', '18:30:00'),
+(43, 'David', '2023-03-21', 'Washington', 'WN', 'david@example.com', 'Desktop', 'Instagram', '16:45:00', '18:30:00'),
+(44, 'David', '2023-04-11', 'Washington', 'WN', 'david@example.com', 'Mobile', 'Instagram', '15:45:00', '17:30:00'),
+(45, 'David', '2023-06-12', 'Washington', 'WN', 'david@example.com', 'Desktop', 'Telegram', '09:45:00', '11:30:00');
+-- insert values for customer 5
+INSERT INTO customer1
+VALUES (51,'John', '2023-04-18', 'Texas', 'TX', 'john@example.com', 'Tablet', 'Twitter', '01:00:00', '02:30:00'),
+(52,'John','2023-04-18', 'Texas', 'TX', 'john@example.com', 'Mobile', 'Twitter', '11:00:00', '12:30:00'),
+(53,'John','2023-04-18', 'Texas', 'TX', 'john@example.com', 'Tablet', 'Whatsapp', '21:00:00', '22:30:00'),
+(54,'John','2023-04-18', 'Texas', 'TX', 'john@example.com', 'Desktop', 'Twitter', '14:00:00', '15:30:00'),
+(55,'John','2023-04-18', 'Texas', 'TX', 'john@example.com', 'Tablet', 'Hathway', '12:00:00', '02:00:00');
+-- insert values for customer 6
+INSERT INTO customer1
+VALUES(06, 'Daniel Wilson', '2023-01-05', 'Miami', 'FL', 'danielwilson@example.com', 'Mobile', 'Instagram', '09:30:00', '10:30:00'),
+(61, 'Daniel Wilson', '2023-02-05', 'Miami', 'FL', 'danielwilson@example.com', 'Mobile', 'Whatsapp', '19:30:00', '20:30:00'),
+(62, 'Daniel Wilson', '2023-03-05', 'Miami', 'FL', 'danielwilson@example.com', 'Desktop', 'Instagram', '07:30:00', '08:30:00'),
+(63, 'Daniel Wilson', '2023-04-05', 'Miami', 'FL', 'danielwilson@example.com', 'Mobile', 'Facebook', '02:30:00', '4:30:00'),
+(64, 'Daniel Wilson', '2023-05-05', 'Miami', 'FL', 'danielwilson@example.com', 'Mobile', 'Hathway', '10:30:00', '12:30:00');
+-- Insert values for customer 7
+INSERT INTO customer1
+VALUES(07, 'Olivia Johnson', '2023-01-15', 'Seattle', 'WA', 'oliviajohnson@example.com', 'Desktop', 'Twitter', '10:15:00', '12:00:00'),
+(71, 'Olivia Johnson', '2023-02-15', 'Seattle', 'WA', 'oliviajohnson@example.com', 'Desktop', 'whatsapp', '09:15:00', '11:00:00'),
+(72, 'Olivia Johnson', '2023-03-15', 'Seattle', 'WA', 'oliviajohnson@example.com', 'Desktop', 'Facebook', '11:15:00', '13:00:00'),
+(73, 'Olivia Johnson', '2023-04-15', 'Seattle', 'WA', 'oliviajohnson@example.com', 'Mobile', 'Twitter', '14:15:00', '16:00:00'),
+(74, 'Olivia Johnson', '2023-05-15', 'Seattle', 'WA', 'oliviajohnson@example.com', 'Desktop', 'Telegram', '15:15:00', '16:00:00');
+-- insert values for customer 8
+INSERT INTO customer1
+VALUES (08, 'Matthew Anderson', '2023-01-29', 'Boston', 'MA', 'matthewanderson@example.com','Mobile', 'Hathway', '09:45:00', '11:11:00'),
+(81, 'Matthew Anderson', '2023-02-19', 'Boston', 'MA', 'matthewanderson@example.com', 'Mobile', 'Instagram', '11:45:00', '12:11:00'),
+(82, 'Matthew Anderson', '2023-03-29', 'Boston', 'MA', 'matthewanderson@example.com', 'Mobile', 'Whatsapp', '14:45:00', '16:11:00'),
+(83, 'Matthew Anderson', '2023-04-29', 'Boston', 'MA', 'matthewanderson@example.com', 'Desktop', 'Hathway', '18:45:00', '19:11:00'),
+(84, 'Matthew Anderson', '2023-06-29', 'Boston', 'MA', 'matthewanderson@example.com', 'Tablet', 'Hathway', '15:45:00', '16:11:00');
+-- INSERT values for customer 9
+INSERT INTO customer1
+VALUES(09, 'Wilson', '2023-01-01', 'Durban', 'DL', 'wilson@example.com', 'Desktop', 'Facebook', '19:30:00', '20:30:00'),
+(91, 'Wilson', '2023-02-01', 'Durban', 'DL', 'wilson@example.com', 'Desktop', 'Whatsapp', '09:30:00', '11:30:00'),
+(92, 'Wilson', '2023-03-01', 'Durban', 'DL', 'wilson@example.com', 'Desktop', 'Hathway', '09:30:00', '10:30:00'),
+(93, 'Wilson', '2023-04-01', 'Durban', 'DL', 'wilson@example.com', 'Mobile', 'Facebook', '04:30:00', '06:30:00'),
+(94, 'Wilson', '2023-05-01', 'Durban', 'DL', 'wilson@example.com', 'Tablet', 'Telegram', '18:30:00', '20:30:00');
+-- insert values for customer 10
+INSERT INTO customer1 VALUES
+(10, 'John Abraham', '2023-01-15', 'New York', 'NY', 'johnab@example.com', 'Mobile', 'Instagram', '09:00:00', '10:30:00'),
+(101, 'John Abraham ', '2023-02-15', 'New York', 'NY', 'johnab@example.com', 'Mobile', 'Whatsapp', '10:00:00', '10:30:00'),
+(102, 'John Abraham', '2023-03-15', 'New York', 'NY', 'johnab@example.com', 'Mobile', 'Hathway', '15:00:00', '16:30:00'),
+(103, 'John Abraham', '2023-04-15', 'New York', 'NY', 'johnab@example.com', 'Desktop', 'Instagram', '14:00:00', '15:30:00'),
+(104, 'John Abraham', '2023-06-15', 'New York', 'NY', 'johnab@example.com', 'Tablet', 'Instagram', '19:00:00', '20:30:00');
+
+    SELECT * FROM customer1;
+CREATE TABLE order_table (
+  order_id INT PRIMARY KEY,
+  customer_id INT,
+  order_date DATE,
+  product VARCHAR(50),
+  product_id INT,
+  arrival_date DATE,
+  dispatch_date DATE,
+  sender_location VARCHAR(50),
+  receiver_location VARCHAR(50),
+  CONSTRAINT fk_customer
+    FOREIGN KEY (customer_id)
+    REFERENCES customer1(cust_id)
+);
+show tables;
+INSERT INTO order_table (order_id, customer_id, order_date, product, product_id, arrival_date, dispatch_date, sender_location, receiver_location);
+-- Insert orders of customer 2
+INSERT INTO order_table
+VALUES
+  (111, 22, '2023-01-17', 'SAMSUNG TV', 1011, '2023-01-20', '2023-01-17', 'MADURAI', 'TENKASI'),
+  (112, 24, '2023-01-19', 'SAMSUNG Mobile', 1012, '2023-01-23', '2023-01-19', 'MADURAI', 'MUMBAI'),
+  (113, 21, '2023-01-21', 'SAMSUNG Headphone', 1013, '2023-01-23', '2023-01-21', 'CHENNAI', 'TENKASI');
+  -- INSERT ORDERS OF 4
+INSERT INTO order_table
+VALUES
+  (201, 43, '2023-02-05', 'SPARX SHOE', 1021, '2023-02-12', '2023-02-5', 'NELLORE', 'PUNE'),
+  (202, 41, '2023-02-06', 'SPARX SANDAL', 1022, '2023-02-13', '2023-02-06', 'MUMBAI', 'PUNE'),
+  (203, 42, '2023-02-15', 'SPARX SLIPPER', 1023, '2023-02-19', '2023-02-15', 'NELLORE', 'CHENNAI');
+  -- insert orders of customer 6
+  INSERT INTO order_table
+  VALUES (441, 63, '2023-04-20', 'ONEPLUS PHONE', 1041, '2023-04-26', '2023-04-22', 'NAGPUR', 'BHOPAL'),
+  (442, 64, '2023-04-22', 'ONEPLUS HEADPHONE', 1042, '2023-04-26', '2023-04-22', 'NAGPUR', 'NASHIK'),
+  (443, 61, '2023-04-24', 'ONEPLUS HEADPHONE', 1043, '2023-04-26', '2023-04-24', 'SURAT', 'BHOPAL');
+  -- INSERT orders for customer 8
+  INSERT INTO order_table
+  VALUES (505,82, '2023-05-08', 'BOAT AIRDOPES', 1051, '2023-05-15', '2023-05-11', 'LUCKNOW', 'PATNA'),
+  (506, 83, '2023-05-10', 'BOAT SPEAKERS', 1052, '2023-05-17', '2023-05-11', 'LUCKNOW', 'KOLKATA'),
+  (507, 84, '2023-05-12', 'BOAT HEADPHONES', 1053, '2023-05-18', '2023-05-14', 'DELHI', 'PATNA');
+  -- INSERT ORDERS OF CUSTOMER 10
+  INSERT INTO order_table
+  VALUES (661,103, '2023-06-15', 'LENOVO MOUSE', 1061, '2023-06-20', '2023-06-17', 'AHMEDABAD', 'LONAVALA'),
+  (662, 102, '2023-06-17', 'LENOVO LAPTOP', 1062, '2023-06-21', '2023-06-17', 'AHMEDABAD', 'PUNE'),
+  (663, 101, '2023-06-19', 'LENOVO MOBILE', 1063, '2023-06-22', '2023-06-20', 'MADURAI', 'NELLAI');

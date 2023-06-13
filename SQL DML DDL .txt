@@ -1,0 +1,32 @@
+Select * FROM order_table;
+-- DML COMMANDS
+-- Add a new column to the table
+ALTER TABLE customer1
+ADD age INT;
+
+-- Rename a column
+ALTER TABLE customer1
+RENAME COLUMN state TO STATE;
+
+-- Drop a column from the table
+ALTER TABLE customer1
+DROP COLUMN age;
+select * from customer1;
+-- DML COMMANDS
+-- Upate
+UPDATE customer1
+SET channel = 'Whatsapp'
+WHERE cust_id = 1;
+
+-- Update the city and state for customers in a specific location
+UPDATE customer1
+SET city = 'MUMBAI', STATE = 'MH'
+WHERE cust_id= 11 ;
+
+use customers;
+select * from customer1;
+select * from order_table;
+-- order_table customer
+-- FOREIGN KEY --
+select customer1.cust_name ,order_table.receiver_location,customer1.channel from order_table,customer1 where order_table.customer_id=customer1.cust_id;
+select customer1.cust_name,customer1.city,order_table.product from customer1,order_table where customer1.cust_id=order_table.customer_id;
